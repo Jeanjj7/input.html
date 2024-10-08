@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Receba as informações do input</h1>
+    <form action="" method="post">
+        <div id="parte1">
+
+
+            <label for="primeiro_nome">Primeiro Nome: </label>
+            <input type="text" name="primeiro_nome" id="primeiro_nome" placeholder="Digite seu primeioro nome"><br><br>
+
+            <label>Sobrenome: </label>
+            <input type="text" name="sobrenome" value="" required> <br><br>
+
+            <label>Senha: </label>
+            <input type="password" name="senha"> <br><br>
+
+            <label>Repita a Senha: </label>
+            <input type="password" name="senha2"> <br><br>
+
+
+            <label>E-mail: </label>
+            <input type="email" required> <br><br>
+
+            <label>Tempo de experiencia(anos): </label>
+            <input type="number" name="tempo"> <br><br>
+
+            <label>Altura(m): </label>
+            <input type="number" name="altura" min="1.60" max="3.50" step="0.01"> <br><br>
+
+
+            <label>Telefone: </label>
+            <input type="tel" name="celular"> <br><br>
+
+            <label>Data de narcimento: </label>
+            <input type="date" name="data_nasc" required> <br><br>
+
+            <!-- <label>Data de narcimento: </label>
+        <input type="week" name="data_nasc" required> <br><br>
+
+        <label>Data de narcimento: </label>
+        <input type="month" name="data_nasc" required> <br><br> -->
+
+
+
+            <label>Hora de narcimento: </label>
+            <input type="time" name="hora_nasc"> <br><br>
+
+            <!-- <label>Hora de narcimento: </label>
+        <input type="datetime" name="hora_nasc"> <br><br>  
+
+        <label>Hora de narcimento: </label>
+        <input type="datetime-local" name="hora_nasc"> <br><br>   -->
+
+        </div>
+        <h4>Ling. prefereciais</h4>
+        <input type="checkbox" name="op_python" value="1001" checked disabled>
+        <label>Python</label> <br><br>
+
+        <input type="checkbox" name="op_javasc" value="1002">
+        <label>JavaScript</label> <br><br>
+
+        <input type="checkbox" name="op_C" value="1003">
+        <label>C#</label> <br><br>
+
+
+        <h4>Possui algum tipo de deficiencia</h4>
+        <input type="radio" name="e_pcd" value="1">
+        <label>Sim</label> <br>
+        <input type="radio" name="e_pcd" value="0">
+        <label>Não</label> <br>
+
+        <label>Escolha um cor: </label>
+        <input type="color" name="cor"> <br> <br>
+
+        <label>Observações</label>: <br>
+        <textarea name="" cols="30" rows="5">Algumtexto</textarea> <br><br>
+
+        <label>Curso: </label>
+        <select name="curso_es">
+            <option value="">Selecione</option>
+            <option value="500">Sport</option>
+            <option value="501">Real</option>
+            <option value="502">ibis</option>
+        </select> <br><br>
+
+        <label>Disponibilidade(mensal):</label>
+        <input type="range" min="30" max="200"> <br> <br>
+
+        <input type="submit" name="Salvar">
+        <input type="reset" nome=""> <br> <br>
+
+        <button type="submit">Cadastra</button>
+        <button type="reset">Resetar</button><br> <br>
+
+    </form>
+</body>
+
+</html>
